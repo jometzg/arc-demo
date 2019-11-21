@@ -59,7 +59,7 @@ This is the part that requires an AWS account (only for these test purposes, of 
 In the AWS console, here is the list of VMs. I have a couple already:
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-vm-summary.png "AWS VM instance list")
 
-Now press the "Lauch" button.
+Now press the "Launch Instance" button.
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-launch1.png "AWS Launch")
 
 You are now presented with a list of VM types.
@@ -76,7 +76,7 @@ Now hit the "Review and Launch" button.
 
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-review-and-launch.png "AWS review and launch")
 
-Now you will be presented with a summary of what has been chosen
+Now you will be presented with a summary of what has been chosen. Then press the "Launch" button.
 
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-launch.png "AWS launch summary")
 
