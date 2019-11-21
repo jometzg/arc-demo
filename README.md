@@ -59,3 +59,36 @@ This is the part that requires an AWS account (only for these test purposes, of 
 In the AWS console, here is the list of VMs. I have a couple already:
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-vm-summary.png "AWS VM instance list")
 
+Now press the "Lauch" button.
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-launch1.png "AWS Launch")
+
+You are now presented with a list of VM types.
+
+**It is important for this demonstration that you select Ubuntu, as the agent at Arc preview time will only run on this flavour of Linux**
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-select-ubuntu.png "AWS select Ubuntu")
+
+and go for the cheapest tier for testing purposes:
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-select-size.png "AWS select smallest size")
+
+Now hit "Review and Launch"
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-review-and-launch.png "AWS review and launch")
+
+Now you will be presented with a summary of what has been chosen
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-launch.png "AWS launch summary")
+
+The VM will now start provisioning. So some waiting is required.
+
+### Connecting to the target Ubuntu VM
+Once the VM has provisioned, you can connect to the VM or rather get its connection credentials.
+Hit "Connect", as shown below:
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-connect.png "AWS connect")
+
+This will then display the connection details to allow you to open an ssh session to the VM. I have redacted mine.
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-connect2.png "AWS connect summary")
+
+### Installing the Arc agent on the VM
+
