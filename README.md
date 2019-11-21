@@ -1,11 +1,6 @@
 # Azure Arc Demonstration
 This is a brief demostration on how to use Azure Arc to monitor AWS Linux instances.
 
-## Prerequisites
-1. An Azure account (of course)
-2. A test AWS account (can be a free trial one)
-3. Some basic bash and command line skills
-
 ## What is Azure Arc?
 The [documentation](https://azure.microsoft.com/en-gb/services/azure-arc/) gives the following summary:
 
@@ -21,7 +16,12 @@ The [documentation](https://azure.microsoft.com/en-gb/services/azure-arc/) gives
 **Run data services anywhere** - Get automated patching, upgrades, security and scale on-demand across on-premises, edge and multicloud environments for your data estate.
 
 ## This demonstration Scope
-This demonstration is only focussed around the first feature which is to allow governance across environments. 
+This demonstration is only focussed around the first feature which is to allow governance across environments. It illustrates how a remote VM can be managed in Azure via Arc.
+
+## Prerequisites
+1. An Azure account (of course)
+2. A test AWS account (can be a free trial one)
+3. Some basic bash and command line skills
 
 ## Steps
 ### Find the Arc feature in the portal
