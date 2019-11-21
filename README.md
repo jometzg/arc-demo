@@ -47,7 +47,7 @@ wget https://aka.ms/azcmagent -O ~/install_linux_azcmagent.sh
 bash ~/install_linux_azcmagent.sh
 
 # Run connect command
-azcmagent connect --resource-group "traget-resource-group" --tenant-id "YOUR-AZURE-AD-TENANT-ID" --location "target-location" --subscription-id "YOUR-SUBSCRIPTION-ID"
+azcmagent connect --resource-group "target-resource-group" --tenant-id "YOUR-AZURE-AD-TENANT-ID" --location "target-location" --subscription-id "YOUR-SUBSCRIPTION-ID"
 ```
 This will need to be run on the target Linux machine
 
@@ -114,8 +114,23 @@ This will prompt you twice for a root password.
 
 You can then execute the script's 3 steps. This will download the client and install it. The final step connects the VM to Azure.
 
-So now switch contexts back to the Azure portal.
+Phew! Almost there! So now switch contexts back to the Azure portal.
 
 ### Looking at the remove VM in Azure
+Switching back to the Azure portal, the remote VM now appears in in the list of VMs in the Arc section of the portal:
+![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-appears-in-arc.png "AWS VM in Arc")
+
+Clicking on the Vm here, reveals the VM details, just like and Azure VM.
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-details.png "AWS VM details")
+
+If you noticed from the script on that gets executed on the VM, an Azure resource group was mentioned. This is to allow the VM to appear in your chosen resource group - just like any other Azure resources. In this demonstration I chose the resource group "arc-rg". So let's look at its contents.
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-in-rg.png "AWS VM in Azure resource group")
+
+This is then the start of the management journey for that VM. This VM can then be managed like other VMs. You can apply Azure policies to this VM, just like any other Azure VM.
+
+## Summary
+This demonstration shows that external resources (in this case VMs) can be managed in Azure. This is the first step of capabilities that Arc will bring to Azure.
 
 
