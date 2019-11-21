@@ -72,7 +72,8 @@ and go for the cheapest tier for testing purposes:
 
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-select-size.png "AWS select smallest size")
 
-Now hit "Review and Launch"
+Now hit the "Review and Launch" button.
+
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-review-and-launch.png "AWS review and launch")
 
 Now you will be presented with a summary of what has been chosen
@@ -89,6 +90,13 @@ Hit "Connect", as shown below:
 This will then display the connection details to allow you to open an ssh session to the VM. I have redacted mine.
 
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-connect2.png "AWS connect summary")
+
+
+**Note that AWS uses a private key file (PEM) as a means to authenticate to the VM. The PEM will need to be downloaded the first time a connection is attempted and stored on your PC. This is explained in the AWS documentation. Once you have a PEM downloaded, you can use this for multiple VMs - though this would not be recommended for anything production.**
+
+```
+ssh -i "firstvm.pem" ubuntu@ec2-3-17-XX-XX.us-east-2.compute.amazonaws.com
+```
 
 ### Installing the Arc agent on the VM
 
