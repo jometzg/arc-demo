@@ -97,6 +97,25 @@ This will then display the connection details to allow you to open an ssh sessio
 ```
 ssh -i "firstvm.pem" ubuntu@ec2-3-17-XX-XX.us-east-2.compute.amazonaws.com
 ```
+![alt text](https://github.com/jometzg/arc-demo/blob/master/aws-vm-shell.png "AWS VM shell")
 
 ### Installing the Arc agent on the VM
+Once you have a shell onto the target machine, it is "just" a matter of running the Arc generated script on the Linux machine.
+
+I have noticed a couple of things:
+1. The commands really need to be preceeded with a "sudo"
+2. As you have connected to the VM using a certificate you don't know the password.
+
+This can be remedied by:
+```
+sudo passwd
+```
+This will prompt you twice for a root password.
+
+You can then execute the script's 3 steps. This will download the client and install it. The final step connects the VM to Azure.
+
+So now switch contexts back to the Azure portal.
+
+### Looking at the remove VM in Azure
+
 
