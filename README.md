@@ -116,7 +116,7 @@ You can then execute the script's 3 steps. This will download the client and ins
 
 Phew! Almost there! So now switch contexts back to the Azure portal.
 
-### Looking at the remove VM in Azure
+### Looking at the remote VM in Azure
 Switching back to the Azure portal, the remote VM now appears in in the list of VMs in the Arc section of the portal:
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-appears-in-arc.png "AWS VM in Arc")
 
