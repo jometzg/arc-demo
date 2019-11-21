@@ -7,8 +7,9 @@ This is a brief demostration on how to use Azure Arc to monitor AWS Linux instan
 3. Some basic bash and command line skills
 
 ## What is Azure Arc?
-The documentation gives the followinf summary:
-For customers who want to simplify complex and distributed environments across on-premises, edge and multicloud, Azure Arc enables deployment of Azure services anywhere and extends Azure management to any infrastructure
+The (documentation)[https://azure.microsoft.com/en-gb/services/azure-arc/] gives the following summary:
+
+>For customers who want to simplify complex and distributed environments across on-premises, edge and multicloud, Azure Arc enables >deployment of Azure services anywhere and extends Azure management to any infrastructure
 
 ## Steps
 
