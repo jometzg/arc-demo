@@ -10,6 +10,8 @@ This is a brief demostration on how to use Azure Arc to monitor AWS Linux instan
 The [documentation](https://azure.microsoft.com/en-gb/services/azure-arc/) gives the following summary:
 
 >For customers who want to simplify complex and distributed environments across on-premises, edge and multicloud, Azure Arc enables >deployment of Azure services anywhere and extends Azure management to any infrastructure
+
+
 ![alt text](https://github.com/jometzg/arc-demo/blob/master/overview.png "Arc overview")
 
 **Organize and govern across environments** - Get databases, Kubernetes clusters, and servers sprawling across on-premises, edge and multicloud environments under control by centrally organizing and governing from a single place.
