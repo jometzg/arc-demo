@@ -132,7 +132,21 @@ If you noticed from the script on that gets executed on the VM, an Azure resourc
 
 This is then the start of the management journey for that VM. This VM can then be managed like other VMs. You can apply Azure policies to this VM, just like any other Azure VM.
 
+## Setting Policies
+You can treat the remote VM's policies just like one in Azure.
+
+If we set a tagging policy and assign it to the VM, then the VM must match the tagging policy to be compliant. Below we have set the VM to have a tagging policy where there must be a tag of *Department* and its value must be one of *Claims* or *Renewals".
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-tagging.png "Tagged AWS VM")
+
+if we now look at its policy compliance, we can see that is is compliant. If we changed the department to *IT*, it would fail.
+
+![alt text](https://github.com/jometzg/arc-demo/blob/master/arc-vm-policy-compliance.png "Tagged AWS VM Compliance")
+
+
 ## Summary
-This demonstration shows that external resources (in this case VMs) can be managed in Azure. This is the first step of capabilities that Arc will bring to Azure.
+This demonstration shows that external resources (in this case VMs) can be managed in Azure. This includes bringing this VM under a common set of policies.
+
+This is the first step of capabilities that Arc will bring to Azure.
 
 
